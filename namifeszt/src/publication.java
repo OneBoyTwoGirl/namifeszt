@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 /*
 * File: Publication.java
@@ -9,6 +10,11 @@
 * Licenc: GNU GPL
 */
 
-public class Publication {
+public class Publication implements Names {
+
+    @Override
+    public ArrayList<String> getNames() {
+        return null;
+    }
     
 }
