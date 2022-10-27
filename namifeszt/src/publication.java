@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 /*
 * File: Publication.java
 * Author: Serényi Zsolt Ödön
@@ -10,11 +8,19 @@ import java.util.ArrayList;
 * Licenc: GNU GPL
 */
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
+
 public class Publication implements Names {
 
     @Override
     public ArrayList<String> getNames() {
-        return null;
+        String[] names = {"Béla", "Géza"};
+        ArrayList<String> nameList =
+        new ArrayList<>(Arrays.asList(names));
+
+        return nameList;
     }
     
 }

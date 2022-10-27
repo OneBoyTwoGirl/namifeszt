@@ -7,9 +7,14 @@
 * Github: https://github.com/OneBoyTwoGirl/
 * Licenc: GNU GPL
 */
+import java.util.ArrayList;
 
 public class App {
     public static void main(String[] args) throws Exception {
-
+        Publication publ = new Publication();
+        ArrayList<String> nameList = publ.getNames();
+        for (String names : nameList) {
+            System.out.println(names);
+        }
     }
 }
